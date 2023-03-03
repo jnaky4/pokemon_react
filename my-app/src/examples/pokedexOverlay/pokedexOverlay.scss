@@ -1,0 +1,101 @@
+$top: 50%;
+$left: 50%;
+$b-radius: .5em;
+$red: #ce242d;
+$blue: #1c2ba0;
+$yellow: #ffc50c;
+
+.overlay {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.5);
+    // transition-duration: 2s;
+    margin: 0;
+
+    // temporary
+    transform: translate(0, -120px);
+
+    &__pokedex {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: auto;
+
+        &__tray {
+            width: 450px;
+            height: 645px;
+            clip-path: polygon(0 100%, 0 15%, 50% 15%, 70% 0, 100% 0, 100% 100%);
+            background: #ca3030;
+            transform: translate(-20px, 125px);
+
+        }
+    }
+
+    &__container {
+        // border: 1px solid black;
+        // border-radius: $b-radius;
+        width: 80%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        // background-color: $red;
+        background-color: none;
+    }
+
+    &__map__border,
+    &__map__container,
+    &__map__image {
+        width: 20%;
+    }
+
+    &__map__border {
+        background: black;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%, 0% 81%);
+        border-radius: $b-radius;
+        transform: translate(35px, 150px);
+        width: 375px;
+        // padding: 0;
+        // margin: 0;
+    }
+
+    &__map__container {
+        align-items: center;
+        border: 4px solid black;
+        border-radius: $b-radius;
+        // transform: translate(25px);
+        background-color: silver;
+        padding: 40px 59px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0% 80%);
+        width: 250px;
+    }
+
+    &__map__image {
+        // width: 20%;
+        height: auto;
+        // display: inline-block;
+        // margin-left: auto;
+        // margin-right: auto;
+
+        z-index: 4;
+        // left: $left;
+        // top: $top;
+        // transform: translate(-10px, 300px);
+        border: 2px solid black;
+        border-radius: $b-radius;
+        min-width: 255px;
+    }
+
+    &__map__image:hover {
+        cursor: pointer;
+    }
+
+    &__pokemon__image {
+        left: 0;
+        width: 25%;
+        display: inline-block;
+    }
+
+}

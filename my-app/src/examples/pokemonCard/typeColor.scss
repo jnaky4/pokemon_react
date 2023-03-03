@@ -1,0 +1,90 @@
+.Grass {
+    background-color: #5F9569;
+    color: black;
+}
+
+.Fire {
+
+    color: black;
+    background-color: #E64556;
+
+    .name,
+    .hp,
+    .stage_wrapper {
+        color: black;
+    }
+}
+
+.Water {
+    color: black;
+    background-color: #84ADD7;
+}
+
+.Ice {
+    color: black;
+    background-color: lightblue;
+}
+
+.Rock {
+    background-color: #333333;
+    color: brown;
+
+    .table_stats,
+    .description,
+    .table_type,
+    .illustrator,
+    .restorer,
+    .creation,
+    .restorer_link {
+        color: white;
+    }
+}
+
+.Ground {
+    background-color: #332011;
+    color: white;
+
+    .table_stats,
+    .description,
+    .table_type,
+    .illustrator,
+    .restorer,
+    .creation,
+    .restorer_link {
+        color: white;
+    }
+}
+
+.Dragon,
+.Normal,
+.Flying {
+    background-color: #BBBBBB;
+    color: black;
+}
+
+.Electric {
+    color: black;
+    background-color: #FAB61D;
+}
+
+.Bug {
+    color: black;
+    background-color: #7AC89E;
+}
+
+.Ghost,
+.Psychic,
+.Poison {
+    background-color: #7C6EBB;
+    color: black;
+}
+
+.Fighting {
+    background-color: #C04C4B;
+    color: black;
+
+    .name,
+    .hp {
+        color: black;
+    }
+}

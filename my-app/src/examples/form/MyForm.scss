@@ -1,0 +1,14 @@
+form {
+    border: 1px solid red;
+    > ul{
+        display: flex;
+        // align-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        > li {
+            list-style-type: none;
+        }
+    } 
+    
+}
